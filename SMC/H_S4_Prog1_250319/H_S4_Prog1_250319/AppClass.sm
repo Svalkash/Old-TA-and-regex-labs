@@ -1,0 +1,72 @@
+%start MainMap::TypeName
+%class AppClass
+%header AppClass.h
+
+%map MainMap
+%%
+
+Default
+{
+Letter(c:char) Error {}
+Digit(c:char) Error {}
+Space Error {}
+Sign Error {}
+EqualSign Error {}
+Colon Error {}
+Unknown Error {}
+EOS Error {Unacceptable();}
+Reset TypeName {}
+}
+
+TypeName
+{
+Letter(c:char)[ctxt.checkTNlen()] nil {addTN(c);}
+Digit(c:char)[ctxt.checkTNlen()] nil {addTN(c);}
+Space[ctxt.checkTN()] Name { sch();}
+Colon[ctxt.checkTFL() && ctxt.checkTNlenN()] WE {setDefTN(); sch();}
+}
+
+Name
+{
+Letter(c:char)[ctxt.checkNlen()] nil {addN(c);}
+Digit(c:char)[ctxt.checkNlen()] nil {addN(c);}
+Colon[ctxt.checkFL() && ctxt.checkNlenN()] WE { sch();}
+}
+
+WE
+{
+EqualSign String1 { sch();}
+}
+
+String1
+{
+Letter(c:char)[ctxt.checkS1len()] nil {addS1(c); setLF1();}
+Digit(c:char)[ctxt.checkS1len() || ctxt.notLF1()] nil {addS1(c);}
+Space[ctxt.checkS1()] WSign { sch();}
+}
+
+WSign
+{
+Sign WS { sch();}
+}
+
+WS
+{
+Space String2 { sch();}
+}
+
+String2
+{
+Letter(c:char)[ctxt.checkS2len()] nil {addS2(c); setLF2();}
+Digit(c:char)[ctxt.checkS2len() || ctxt.notLF2()] nil {addS2(c);}
+EOS[ctxt.checkS2()] OK {Acceptable(); sch();}
+}
+
+OK
+{
+}
+
+Error
+{
+}
+%%

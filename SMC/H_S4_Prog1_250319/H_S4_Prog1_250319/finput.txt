@@ -1,0 +1,6 @@
+int a11:=8765 + 112124
+short b22:=12324 + a
+c33:=a11 + b22
+asfsg c:=a11 + b22
+int d:=a11+e
+int 1k:=a11 + b22

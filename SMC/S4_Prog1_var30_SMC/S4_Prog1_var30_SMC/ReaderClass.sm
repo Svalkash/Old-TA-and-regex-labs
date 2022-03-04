@@ -1,0 +1,73 @@
+%start RMap::Start
+%class ReaderClass
+%header   ReaderClass.h
+
+%map RMap
+%%
+
+Default
+{
+	Dig(c: char) Error {}
+	Lit(c: char) Error {}
+	Plus Error {}
+	Colon Error {}
+	Comma Error {}
+	Semicolon Error {}
+	EqualSign Error {}
+	Unknown Error {}
+	EOS Error { fFail(); }
+	Reset Start {}
+}
+
+Start
+{
+	Lit(c: char) Type { addTS(c); }
+}
+
+Type
+{
+	Lit(c: char)[ctxt.checkTL()] nil { addTS(c); }
+	Colon[ctxt.checkType()] NumP {}
+}
+
+NumP
+{
+	Plus Num {}
+}
+
+Num
+{
+	Dig(c: char)[ctxt.checkNL()] nil { addNS(c); }
+	Comma[!ctxt.checkNL()] NumP { resetNS(); }
+	Semicolon[!ctxt.checkNL()] Body { resetNS(); }
+}
+
+Body
+{
+	Lit(c: char)[ctxt.checkBL()] nil { addBS(c); }
+	EqualSign[ctxt.checkBS() && ctxt.isSms()] Sms {}
+	EqualSign[ctxt.checkBS()] NoSms {}
+}
+
+Sms
+{
+	Dig(c: char)[ctxt.checkSL()] nil { incSL(); }
+	Lit(c: char)[ctxt.checkSL()] nil { incSL(); }
+	Comma[ctxt.checkSL()] nil { incSL(); }
+	EOS OK { fSuccess(); }
+}
+
+NoSms
+{
+	EOS OK { fSuccess(); }
+}
+
+OK
+{
+}
+
+Error
+{
+}
+
+%%

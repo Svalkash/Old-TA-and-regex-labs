@@ -1,0 +1,12 @@
+  ACCEPTABLE | ftp://serv.dom1.dom2.dom3.zone
+  ACCEPTABLE | FtP://sErv.dLm1.dAAm2.doASDS.zone
+INACCEPTABLE | ftp://se$rv.dom1.dom2.dom3.zone
+INACCEPTABLE | ftp://.dom1.dom2.dom3.zone
+  ACCEPTABLE | ftp://serv.zone
+INACCEPTABLE | serv.dom1..dom3.zone
+INACCEPTABLE | ftp:serv.dom1.dom2.dom3.zone
+INACCEPTABLE | ftp:/serv.dom1.dom2.dom3.zone
+INACCEPTABLE | ftp://serv.dom1.dom2.dom3.zonenenene
+INACCEPTABLE | ftp://serv.dom1eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.dom2.dom3.zone
+  ACCEPTABLE | ftp://serv.dom1eeeeeeeeee.dom2eeeeeeeeee.dom3eeeeeeeeee.zone
+INACCEPTABLE | ftp://serv.dom1eeeeeeeeeeeeeee.dom2eeeeeeeeeeeeeee.dom3eeeeeeeeeeeeeee.zone

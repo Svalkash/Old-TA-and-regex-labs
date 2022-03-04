@@ -1,0 +1,6 @@
+  ACCEPTABLE - int a11:=8765 + 112124
+  ACCEPTABLE - short b22:=12324 + a
+  ACCEPTABLE - c33:=a11 + b22
+UNACCEPTABLE - asfsg c:=a11 + b22
+UNACCEPTABLE - int d:=a11+e
+UNACCEPTABLE - int 1k:=a11 + b22

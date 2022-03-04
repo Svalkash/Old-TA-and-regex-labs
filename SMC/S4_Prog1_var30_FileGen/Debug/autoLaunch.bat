@@ -1,0 +1,2 @@
+S4_Prog1_var30_FileGen.exe 6
+PAUSE

@@ -1,0 +1,2 @@
+S4_Prog1_var30_SMC.exe stringList.txt
+PAUSE

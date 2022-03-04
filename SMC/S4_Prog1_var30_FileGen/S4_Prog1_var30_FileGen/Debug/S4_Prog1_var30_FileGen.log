@@ -1,0 +1,3 @@
+﻿  S4_Prog1_var30_FileGen.cpp
+d:\svalkash_files_lite\programs\vs2017\s4_prog1_var30_filegen\s4_prog1_var30_filegen\s4_prog1_var30_filegen.cpp(72): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  S4_Prog1_var30_FileGen.vcxproj -> D:\SVALKASH_FILES_LITE\Programs\VS2017\S4_Prog1_var30_FileGen\Debug\S4_Prog1_var30_FileGen.exe

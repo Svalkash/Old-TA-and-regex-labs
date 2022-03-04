@@ -1,0 +1,9 @@
+  ACCEPTABLE - ftp://username1:password1@server1.zonex.zonea.zoneb
+UNACCEPTABLE - ftp://username1:@server2.zonex.zonea.zoneb
+UNACCEPTABLE - uuftp://username1:password1@server1.zonex.zonea.zoneb
+UNACCEPTABLE - ftp://username1:password1@server1.zonex.zonea.zoneba
+UNACCEPTABLE - ftp://username1:password1@server1.zonex.zoneay.zoneb
+  ACCEPTABLE - ftp://username1:password1@server1.zonex.zonea.zoneb
+  ACCEPTABLE - ftp://username123455:password1123455@server1.zonex.zonea.zoneb
+  ACCEPTABLE - ftp://username123455@server2.zonex.zonea.zoneb
+  ACCEPTABLE - ftp://username123455@server2.zonex.zonea.zoneb

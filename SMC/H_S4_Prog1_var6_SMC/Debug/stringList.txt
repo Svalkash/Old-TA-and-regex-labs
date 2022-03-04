@@ -1,0 +1,12 @@
+ftp://serv.dom1.dom2.dom3.zone
+FtP://sErv.dLm1.dAAm2.doASDS.zone
+ftp://se$rv.dom1.dom2.dom3.zone
+ftp://.dom1.dom2.dom3.zone
+ftp://serv.zone
+serv.dom1..dom3.zone
+ftp:serv.dom1.dom2.dom3.zone
+ftp:/serv.dom1.dom2.dom3.zone
+ftp://serv.dom1.dom2.dom3.zonenenene
+ftp://serv.dom1eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.dom2.dom3.zone
+ftp://serv.dom1eeeeeeeeee.dom2eeeeeeeeee.dom3eeeeeeeeee.zone
+ftp://serv.dom1eeeeeeeeeeeeeee.dom2eeeeeeeeeeeeeee.dom3eeeeeeeeeeeeeee.zone
