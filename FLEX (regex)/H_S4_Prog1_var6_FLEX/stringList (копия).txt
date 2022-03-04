@@ -1,0 +1,5 @@
+ftp://server.dom1.dom2.zone
+ftp://servak2.zo
+ftp://
+ftp://server.dom1.dom2.zoneeeeee
+aaaaftp://server.dom1.dom2.zoneeeeee

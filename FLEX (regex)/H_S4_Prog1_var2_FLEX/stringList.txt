@@ -1,0 +1,9 @@
+ftp://username1:password1@server1.zonex.zonea.zoneb
+ftp://username1:@server2.zonex.zonea.zoneb
+uuftp://username1:password1@server1.zonex.zonea.zoneb
+ftp://username1:password1@server1.zonex.zonea.zoneba
+ftp://username1:password1@server1.zonex.zoneay.zoneb
+ftp://username1:password1@server1.zonex.zonea.zoneb
+ftp://username123455:password1123455@server1.zonex.zonea.zoneb
+ftp://username123455@server2.zonex.zonea.zoneb
+ftp://username123455@server2.zonex.zonea.zoneb

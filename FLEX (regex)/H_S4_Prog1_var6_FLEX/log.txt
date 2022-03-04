@@ -1,0 +1,5 @@
+  ACCEPTABLE | ftp://server.dom1.dom2.zone
+  ACCEPTABLE | ftp://servak2.zo
+INACCEPTABLE | ftp://
+INACCEPTABLE | ftp://server.dom1.dom2.zoneeeeee
+INACCEPTABLE | aaaaftp://server.dom1.dom2.zoneeeeee
